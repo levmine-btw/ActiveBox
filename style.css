@@ -157,3 +157,34 @@ p {
     background-color: #dd3434;
 }
 
+/* Features */
+.features {
+    margin: 100px 0;
+    display: flex;
+}
+
+.features__item {
+    width: 33.33333%;
+    padding: 0 30px;
+
+    text-align: center;
+}
+
+.features__icon {
+    margin-bottom: 25px;
+}
+
+.features__title {
+    font-size: 14px;
+    color: #2d3033;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+}
+
+.features__text {
+    font-size: 14px;
+    color: #6c7279;
+    line-height: 1.5;
+}
