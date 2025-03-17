@@ -257,3 +257,53 @@ background-color: rgba(232, 69, 69, 0.9);
     font-size: 14px;
     color: #fff;
 }
+
+
+/* Team */
+.team {
+    margin: 100px 0;
+}
+
+.team__inner {
+    display: flex;  
+    flex-wrap: wrap;
+}
+
+.team__item {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.team__photo {
+    margin-bottom: 20px;
+
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+}
+
+.team__name {
+    margin-bottom: 8px;
+
+    font-size: 22px;
+    font-family: 'Raleway';
+    color: #2d3033
+}
+
+.team__prof {
+    margin-bottom: 15px;
+
+    font-size: 13px;
+    font-family: 'Raleway';
+    color: #e84545;
+    text-transform: uppercase;
+}
+
+.team__text {
+    font-size: 14px;
+    font-family: 'Raleway';
+    color: #6c7279;
+    line-height: 1.5;
+}
+
