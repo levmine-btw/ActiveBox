@@ -148,6 +148,7 @@ p {
     font-weight: 600;
     text-transform: uppercase;
     text-decoration: none;
+    text-align: center;
 
     transition: .1s;
 }
@@ -160,6 +161,11 @@ p {
 .btn--red:hover {
     background-color: #dd3434;
 }
+
+.btn--long {
+    min-width: 280px;
+}
+
 
 /* Features
 ==================*/
@@ -342,6 +348,17 @@ margin-bottom: 20px;
 
 }
 
+.social--footer .social__item {
+    background: transparent;
+    border-width: 2px;
+    border-color: #fff;
+    border-radius: 2px;
+}
+
+.social--footer .social__item:hover {
+    background-color: #fff;
+}
+
 .social__item:hover {
     background-color: #e8ecee;
 }
@@ -354,8 +371,18 @@ margin-bottom: 20px;
 .social__icon {
     display: block;
     height: 18px;
+
     fill: #c6cacc;
+
     transition: fill 0.1s linear;
+}
+
+.social--footer {
+    justify-content: center;
+}
+
+.social--footer .social__icon {
+    fill: #fff;
 }
 
 /* Reviews
@@ -410,4 +437,94 @@ margin-bottom: 20px;
     text-transform: uppercase;
     color: #fff;
     font-weight: bold;
+}
+
+
+/* Download
+==================*/
+.download {
+    margin: 90px 0;
+    text-align: center;
+}
+
+.download__title {
+    margin-bottom: 10px;
+
+    font-size: 28px;
+    color: #2d3033;
+    font-weight: 300;
+}
+
+.download__text {
+margin-bottom: 30px;
+
+    font-size: 13px;
+    color: #2d3033;
+    font-weight: 700;
+
+    text-transform: uppercase;
+}
+
+
+/* Footer
+==================*/
+.footer {
+    background-color: #3a3e64;
+}
+
+.footer__inner {
+    padding: 70px 0;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__block {
+padding: 0 15px;
+
+    width: 33.33333%;
+
+    text-align: center;
+}
+
+.footer__title {
+margin-bottom: 5px;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    color: #fff;
+
+    text-transform: uppercase;
+}
+
+.footer__address {
+    font-size: 14px;
+    line-height: 1.5;
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer__text {
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+/* Copyright
+==================*/
+.copyright {
+    background-color: #313454;
+}
+
+.copyright__text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #808080;
+}
+
+.copyright__text span {
+    color: #fff;
 }
