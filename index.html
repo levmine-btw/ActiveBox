@@ -10,9 +10,14 @@
         
         <link rel="stylesheet" href="style.css">
         
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>levmine ActiveBox</title>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
     </head>
     <body>
         
@@ -63,31 +68,34 @@
 
 
 <!-- Header -->
-        <header class="header">
+        <header class="header" id="header">
             <div class="container">
                 <div class="header__inner">
                     <div class="header__logo">
                         <img src="./img/Header/ActiveBox.png" alt="logo">
                     </div>
 
-                    <nav class="nav">
-                        <a class="nav__link" href="#">Features</a>
-                        <a class="nav__link" href="#">Works</a>
-                        <a class="nav__link" href="#">Our Team</a>
-                        <a class="nav__link" href="#">Reviews</a>
-                        <a class="nav__link" href="#">Downloads</a>
+
+                    <!-- Nav -->
+                    <nav class="nav" id="nav">
+                        <a class="nav__link" href="#" data-scroll="#features">Features</a>
+                        <a class="nav__link" href="#" data-scroll="#works">Works</a>
+                        <a class="nav__link" href="#" data-scroll="#team">Our Team</a>
+                        <a class="nav__link" href="#" data-scroll="#reviews">Reviews</a>
+                        <a class="nav__link" href="#" data-scroll="#download">Downloads</a>
                     </nav>
 
-                    <button class="burger" type="button">
+                    <button class="burger" type="button" id="navToggle">
                         <span class="burger__item">Menu</span>
                     </button>
+
 
                 </div>
             </div>
         </header>
 
 <!-- Intro -->
-        <div class="intro">
+        <div class="intro" id="intro">
             <div class="container">
                 <div class="intro__inner">
                     <h1 class="intro__title">
@@ -107,7 +115,7 @@
 
 
 <!-- Features -->
- <div class="container">
+ <div class="container" id="features">
     <div class="features">
         <div class="features__item">
             <img class="features__icon" src="./img/Features/1.png" alt="">
@@ -156,7 +164,7 @@
 
 
  <!-- Works -->
-<div class="works">
+<div class="works" id="works">
     <div class="works__item">
         <img class="works__photo" src="./img/Works/1.jpg" alt="">
         <div class="works__content">
@@ -224,7 +232,7 @@
 
 
 <!-- Team -->
- <div class="team">
+ <div class="team" id="team">
     <div class="container">
         <div class="team__inner">
 
@@ -355,20 +363,39 @@
 
 
 <!-- Reviews -->
-<div class="reviews">
+<div class="reviews" id="reviews">
     <div class="container">
 
-        <div class="reviews__item">
-            <div class="reviews__photo">
-                <img class="reviews__img" src="./img/Reviews/reviews_1.jpg" alt="">
+        <div class="reviews__slider" id="reviewsSlider">
+            <div class="slick-item">
+                <div class="reviews__item">
+                    <div class="reviews__photo">
+                        <img class="reviews__img" src="./img/Reviews/reviews_1.jpg" alt="">
+                    </div>
+                    <div class="reviews__content">
+                        <div class="reviews__text">"The stranger was not sitting, but standing beside 
+                            it, holding in his hands some sort of booklet with a dark-grey binding, 
+                            a thick envelope made of good-quality paper and a visiting card..."</div>
+                        <div class="reviews__author">The Margarita, the heroine of the novel 
+                            "The Master and Margarita"</div>
+                    </div>
+                </div> <!-- /.reviews__item -->
             </div>
-            <div class="reviews__content">
-                <div class="reviews__text">"The stranger was not sitting, but standing beside 
-                    it, holding in his hands some sort of booklet with a dark-grey binding, 
-                    a thick envelope made of good-quality paper and a visiting card..."</div>
-                <div class="reviews__author">The Margarita, the heroine of the novel 
-                    "The Master and Margarita"</div>
-            </div>
+
+        <div class="slick-item">
+            <div class="reviews__item">
+                <div class="reviews__photo">
+                    <img class="reviews__img" src="./img/Reviews/reviews_1.jpg" alt="">
+                </div>
+                <div class="reviews__content">
+                    <div class="reviews__text">"The apricot squash produced an abundant yellow foam, 
+                        and there was a sudden smell of the hairdresser's in the air..."</div>
+                    <div class="reviews__author">The Margarita, the heroine of the novel 
+                        "The Master and Margarita"</div>
+                </div>
+            </div> <!-- /.reviews__item -->
+        </div>
+
         </div>
 
     </div> <!-- /.container -->
@@ -376,7 +403,7 @@
 
 
 <!-- Download -->
-<div class="download">
+<div class="download" id="download">
     <div class="container">
 
         <h3 class="download__title">Are You Ready To Start? Download Now For Free!</h3>
@@ -454,6 +481,12 @@
     </div>
 
 </footer> <!-- /.footer -->
+
+
+<!-- JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script src="app.js"></script>
 
 
     </body>
