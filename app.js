@@ -22,9 +22,9 @@ $(function() {
     function checkScroll(scrollPos, introH) {
         if(scrollPos > introH) {
             header.addClass("fixed");
-            } else {
+        } else {
             header.removeClass("fixed");
-            }
+        }
     };
 
     // Smooth Scroll
